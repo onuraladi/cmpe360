@@ -6,20 +6,20 @@
 import * as THREE from "three"
 
 const shaderFunctions = /* glsl */ `
-// source: https://timseverien.com/posts/2020-06-19-colour-correction-with-webgl/
+
 vec3 adjustContrast(vec3 color, float value) {
     const vec3 zero = vec3(0.);
     return max(zero, 0.5 + value * (color - 0.5));
 }
 
-// source: https://gist.github.com/yiwenl/745bfea7f04c456e0101
+
 vec3 hsv2rgb(vec3 c){
     vec4 K = vec4(1.0, 2.0 / 3.0, 1.0 / 3.0, 3.0);
     vec3 p = abs(fract(c.xxx + K.xyz) * 6.0 - K.www);
     return c.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y);
 }
 
-// source: https://gist.github.com/yiwenl/745bfea7f04c456e0101
+
 vec3 rgb2hsv(vec3 rgb) {
     float Cmax = max(rgb.r, max(rgb.g, rgb.b));
     float Cmin = min(rgb.r, min(rgb.g, rgb.b));
@@ -152,7 +152,6 @@ const map_fragment = THREE.ShaderChunk.map_fragment.replace(
     // clamp
     lightMapClr = min(lightMapClr, vec3(1.));
 
-    // source: Chapter 16 of OpenGL Shading Language
     const vec3 W = vec3(0.2125, 0.7154, 0.0721);
     vec3 intensity = vec3(dot(lightMapClr, W));
     lightMapClr = mix(intensity, lightMapClr, lightMapSaturation);
