@@ -302,7 +302,7 @@ THREE.DefaultLoadingManager.onProgress = () => {
 	}
 
 	const progress = Math.round((loadedCount / loadFiles) * 100)
-	if (loadingEl) loadingEl.textContent = progress + "%"
+	if (loadingEl) loadingEl.textContent = progress + "% + TEDUDE GECEN YILLAR "
 }
 
 const useVideoBackground = () => {
@@ -315,7 +315,7 @@ const useVideoBackground = () => {
 		emitterMesh.material.emissiveMap = emitterMesh.material._videoMap
 	} else {
 		const video = document.getElementById("video")
-		video.src = "space.mp4"
+		video.src = "space1.mp4"
 		video.playbackRate = 2
 		video.play()
 		const videoTexture = new THREE.VideoTexture(video)
