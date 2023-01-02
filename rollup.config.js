@@ -1,3 +1,8 @@
+// Author: Kadir Kaan Yazgan / Onur Aladi
+// ID: 10915083388 / 16672586674
+// Section: CMPE 360
+// Project: 02
+// Description: Rollup is a module bundler for JavaScript which compiles small pieces of code into something larger and more complex, such as a library or application.
 import path from "path"
 import babel from "@rollup/plugin-babel"
 import resolve from "@rollup/plugin-node-resolve"
