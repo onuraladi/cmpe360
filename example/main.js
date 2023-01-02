@@ -315,7 +315,7 @@ const useVideoBackground = () => {
 		emitterMesh.material.emissiveMap = emitterMesh.material._videoMap
 	} else {
 		const video = document.getElementById("video")
-		video.src = "space1.mp4"
+		video.src = "space.mp4"
 		video.playbackRate = 2
 		video.play()
 		const videoTexture = new THREE.VideoTexture(video)
