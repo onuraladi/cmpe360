@@ -2,17 +2,17 @@
 // ID: 10915083388 / 16672586674
 // Section: CMPE 360
 // Project: 02
-// Description: Creating movements for our camera
+// Description: Texture perspective projection, creating mapping.
 
 /* eslint-disable camelcase */
 import { ShaderChunk } from "three"
 
-// source: https://stackoverflow.com/a/6969486/7626841
+
 function escapeRegExp(string) {
 	return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") // $& means the whole matched string
 }
 
-// credits for the box-projecting shader code go to codercat (https://codercat.tk)
+
 
 const worldposReplace = /* glsl */ `
 #if defined( USE_ENVMAP ) || defined ( USE_SHADOWMAP )

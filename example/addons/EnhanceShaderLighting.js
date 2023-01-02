@@ -2,7 +2,7 @@
 // ID: 10915083388 / 16672586674
 // Section: CMPE 360
 // Project: 02
-// Description: Creating movements for our camera
+// Description: in 3D graphics to make lighting appear more realistic. It involves calculating lighting at each point on a surface, rather than just applying a single light source to the entire scene. This  make the lighting in a 3D scene appear more realistic and more natural.
 import * as THREE from "three"
 
 const shaderFunctions = /* glsl */ `
