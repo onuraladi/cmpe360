@@ -1,4 +1,10 @@
-﻿/* eslint-disable camelcase */
+﻿// Author: Kadir Kaan Yazgan / Onur Aladi
+// ID: 10915083388 / 16672586674
+// Section: CMPE 360
+// Project: 02
+// Description: Creating movements for our camera
+
+/* eslint-disable camelcase */
 import { ShaderChunk } from "three"
 
 // source: https://stackoverflow.com/a/6969486/7626841

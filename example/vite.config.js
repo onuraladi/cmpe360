@@ -1,3 +1,8 @@
+// Author: Kadir Kaan Yazgan / Onur Aladi
+// ID: 10915083388 / 16672586674
+// Section: CMPE 360
+// Project: 02
+// Description: For building the server, we are used vite.
 import glsl from "vite-plugin-glsl"
 import { defineConfig } from "vite"
 

@@ -1,3 +1,8 @@
+// Author: Kadir Kaan Yazgan / Onur Aladi
+// ID: 10915083388 / 16672586674
+// Section: CMPE 360
+// Project: 02
+// Description: Creating scene, objects ( we re used a gltf file (room.gltf) in room file for 3D room. ) We have json files which has the needed libraries in our script. 
 import * as POSTPROCESSING from "postprocessing"
 import { defaultSSROptions, SSREffect } from "screen-space-reflections"
 import Stats from "stats.js"

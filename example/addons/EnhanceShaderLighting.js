@@ -1,4 +1,9 @@
-﻿import * as THREE from "three"
+﻿// Author: Kadir Kaan Yazgan / Onur Aladi
+// ID: 10915083388 / 16672586674
+// Section: CMPE 360
+// Project: 02
+// Description: Creating movements for our camera
+import * as THREE from "three"
 
 const shaderFunctions = /* glsl */ `
 // source: https://timseverien.com/posts/2020-06-19-colour-correction-with-webgl/
