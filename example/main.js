@@ -225,10 +225,10 @@ gltflLoader.load(url, asset => {
 		stats.showPanel(0)
 		document.body.appendChild(stats.dom)
 
-		const presetsFolder = gui.pane.addFolder({ title: "Presets", expanded: false })
+		const presetsFolder = gui.pane.addFolder({ title: "Art Option ", expanded: false })
 		presetsFolder
 			.addButton({
-				title: "Default"
+				title: "Image"
 			})
 			.on("click", () => {
 				for (const key of Object.keys(defaultParams)) params[key] = defaultParams[key]
@@ -244,7 +244,7 @@ gltflLoader.load(url, asset => {
 
 		presetsFolder
 			.addButton({
-				title: "Animated Background"
+				title: "Animation"
 			})
 			.on("click", () => {
 				useVideoBackground()
